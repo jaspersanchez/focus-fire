@@ -1,0 +1,11 @@
+{
+  "name": "focus-fire",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace=apps/server"
+  }
+}
