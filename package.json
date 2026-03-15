@@ -6,6 +6,12 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:server": "npm run dev --workspace=apps/server"
+    "dev:server": "npm run dev --workspace=apps/server",
+    "lint:server": "npm run lint --workspace=apps/server",
+    "lint:fix:server": "npm run lint:fix --workspace=apps/server",
+    "format:server": "npm run format --workspace=apps/server"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
   }
 }
