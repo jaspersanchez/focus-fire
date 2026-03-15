@@ -1,7 +1,8 @@
+import "dotenv/config";
 import express from "express";
 
 const app = express();
-const port = 3000; // The port your express server will be running on.
+const port = process.env.PORT; // The port your express server will be running on.
 
 // Enable URL-encoded form data parsing
 app.use(express.urlencoded({ extended: true }));
