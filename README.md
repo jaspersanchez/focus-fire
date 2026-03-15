@@ -27,15 +27,19 @@ focus-fire/
 │   └── mobile/       # Mobile (coming soon)
 ├── packages/
 │   └── shared/       # Shared types and utilities
+├── .prettierrc
 └── package.json
 ```
 
 ## Scripts
 
-| Command              | Description                |
-| -------------------- | -------------------------- |
-| `npm run dev:server` | Start server in watch mode |
-| `npm run build:all`  | Build all apps             |
+| Command                  | Description                |
+| -------------------------| -------------------------- |
+| `npm run dev:server`     | Start server in watch mode |
+| `npm run lint:server`    | Lints server               |
+| `npm run lint:fix:server`| Fix lint errors on server  |
+| `npm run format:server`  | Format code on server/src  |
+
 
 ## Environment Variables
 
