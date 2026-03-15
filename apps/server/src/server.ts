@@ -1,6 +1,6 @@
-import express, { Application, Request, Response } from "express";
+import express from "express";
 
-const app: Application = express();
+const app = express();
 const port = 3000; // The port your express server will be running on.
 
 // Enable URL-encoded form data parsing
@@ -9,9 +9,8 @@ app.use(express.urlencoded({ extended: true }));
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Basic route
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, TypeScript + Express!");
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
 });
 
 // Start the server
