@@ -8,19 +8,6 @@ A minimalist productivity app. Built with MERN + TypeScript.
 - npm 10+
 - MongoDB
 
-## Environment Variables
-
-Copy `.env.example` to `.env` inside `apps/server/` and fill in the values:
-
-```bash
-cp apps/server/.env.example apps/server/.env
-```
-
-```
-PORT=3000
-MONGO_URI=your_connection_string
-```
-
 ## Getting Started
 
 ```bash
@@ -55,7 +42,13 @@ focus-fire/
 
 ## Environment Variables
 
-Create a `.env` inside `apps/server/`:
+Copy `.env.example` to `.env` inside `apps/server/`
+
+```bash
+cp apps/server/.env.example apps/server/.env
+```
+
+Fill in the values:
 
 ```
 PORT=3000
